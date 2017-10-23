@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autocomplete Client</title>
+  
+  <link rel="stylesheet" href="css/jquery/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/jquery/jquery-ui.min.js"></script>
+
+  <script src="js/constants.js"></script>
+  <script src="js/autocompleteWordsServer.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="ui-widget">
+    <label for="searchExpression"> Search: </label>
+    <input id="searchExpression"> 
+    <input type="button" value="Update server date" onclick="autocompleteWordsServer.refreshData()"/>
+  </div>
+</body>
+</html>
